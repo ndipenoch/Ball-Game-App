@@ -9,3 +9,4 @@ Click the "Play Again" button to replay without closing down the game.
 You can click on the "Play Again" button to play again from at fresh any time you want.
 Each time you click the button "Play Again", you must click the button "Start/Next-Row" to start the game.
 You can see the highest score you get per game at the end of each game.
+The point of the game is to get the highest score.
