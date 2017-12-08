@@ -37,26 +37,20 @@ namespace gameBoard
             this.InitializeComponent();
             CreatGameBoard();
 
-            ApplicationDataContainer localSetting = ApplicationData.Current.LocalSettings;
+           ApplicationDataContainer localSetting = ApplicationData.Current.LocalSettings;
             try
             {
-                
-                 clickCnt = Convert.ToInt32(localSetting.Values["Value"]);
-                if (clickCnt == 0)
-                {
-                    clickCnt = 15;
-                }
+
+                //clickCnt = Convert.ToInt32(localSetting.Values["Value"]);
+                sumtotal = Convert.ToInt32(localSetting.Values["Value1"]);
 
             }
             catch (Exception e)
             {
 
-                clickCnt = 15;
+               clickCnt = 15;
             }
-            Debug.WriteLine(clickCnt);
-
-
-
+        
         }
 
 
@@ -84,7 +78,7 @@ namespace gameBoard
             for (int i = 0; i < 6; i++)
             {
                 square.RowDefinitions.Add(new RowDefinition());
-                // square.ColumnDefinitions.Add(new ColumnDefinition());
+               
 
             }//end of for loop for Row
 
@@ -120,7 +114,7 @@ namespace gameBoard
 
 
             Button nextRow = new Button();
-            nextRow.Content = "Start-Next/Row";
+            nextRow.Content = "Start/Next Row";
             nextRow.Tapped += nextRow_Tapped;
             nextRow.Background = new SolidColorBrush(Colors.Green);
             nextRow.VerticalAlignment = VerticalAlignment.Top;
@@ -180,16 +174,35 @@ namespace gameBoard
             myText.SetValue(Grid.ColumnSpanProperty, 5);
             myText.Foreground = new SolidColorBrush(Colors.Orange);
 
-        }//end of createGameBoar
+
+            Button restart = new Button();
+            restart.Content = "Play Again";
+            myText.SetValue(Grid.RowProperty, 1);
+            myText.SetValue(Grid.ColumnSpanProperty, 5);
+            restart.Tapped += restart_Tapped;
+            restart.Background = new SolidColorBrush(Colors.Green);
+            gameBoard.Children.Add(restart);
+
+         
+         }//end of createGameBoar
 
 
-
+       //to restart the game by taking you to the main page
+        private void restart_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            //throw new NotImplementedException();
+          
+            ApplicationDataContainer localSetting = ApplicationData.Current.LocalSettings;
+            localSetting.Values["Value1"] = 0;
+            this.Frame.Navigate(typeof(MainPage));
+            
+        }
 
         private void nextRow_Tapped(object sender, TappedRoutedEventArgs e)
         {
 
             turn++;
-            // txt2.Text = turn.ToString();
+   
         }
 
         int blackBall = 0;
@@ -199,7 +212,6 @@ namespace gameBoard
         int redBall = -55;
         int whiteBall = 10;
         int sumtotal = 0;
-        //int clickCnt = 6;
 
 
         private void Balls_Tapped(object sender, TappedRoutedEventArgs e)
@@ -237,31 +249,37 @@ namespace gameBoard
                             currentBall.Fill = new SolidColorBrush(Colors.Black);
                             sumtotal += blackBall;
                             txt.Text = sumtotal.ToString();
+                            localSetting.Values["Value1"] = sumtotal;
                             break;
                         case 2:
                             currentBall.Fill = new SolidColorBrush(Colors.Yellow);
                             sumtotal += yellowBall;
                             txt.Text = sumtotal.ToString();
+                            localSetting.Values["Value1"] = sumtotal;
                             break;
                         case 3:
                             currentBall.Fill = new SolidColorBrush(Colors.Green);
                             sumtotal += greenBall;
                             txt.Text = sumtotal.ToString();
+                            localSetting.Values["Value1"] = sumtotal;
                             break;
                         case 4:
                             currentBall.Fill = new SolidColorBrush(Colors.Blue);
                             sumtotal += blueBall;
                             txt.Text = sumtotal.ToString();
+                            localSetting.Values["Value1"] = sumtotal;
                             break;
                         case 5:
                             currentBall.Fill = new SolidColorBrush(Colors.Red);
                             sumtotal += redBall;
                             txt.Text = sumtotal.ToString();
+                            localSetting.Values["Value1"] = sumtotal;
                             break;
                         case 6:
                             currentBall.Fill = new SolidColorBrush(Colors.White);
                             sumtotal += whiteBall;
                             txt.Text = sumtotal.ToString();
+                            localSetting.Values["Value1"] = sumtotal;
                             break;
 
 

@@ -7,7 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="gameBoard" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="gameBoard" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
 
-    </Grid>
+    </StackPanel>
 </Page>
