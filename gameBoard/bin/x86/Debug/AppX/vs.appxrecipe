@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>CRBYOD17</Machine>
+    <Machine>CRBYOD10</Machine>
     <WindowsUser>G00352031</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b11be82a-a498-4b5d-9b71-7a5d73343647</PackageIdentityName>
     <PackageIdentityPublisher>CN=g00352031</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\G00352031\Desktop\Ball_Game\gameBoard\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T17:09:04.120</Modified>
+      <Modified>2017-12-12T14:01:56.328</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\bin\x86\Debug\gameBoard.exe">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\bin\x86\Debug\gameBoard.exe">
       <PackagePath>entrypoint\gameBoard.exe</PackagePath>
-      <Modified>2017-12-08T17:09:03.852</Modified>
+      <Modified>2017-12-12T14:01:55.215</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\G00352031\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,63 +448,63 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\Assets\laser.mp3">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\Assets\laser.mp3">
       <PackagePath>Assets\laser.mp3</PackagePath>
-      <Modified>2017-12-08T17:08:06.444</Modified>
+      <Modified>2017-12-12T14:00:58.130</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-12-08T17:08:06.475</Modified>
+      <Modified>2017-12-12T14:00:58.187</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-12-08T17:08:06.413</Modified>
+      <Modified>2017-12-12T14:00:58.118</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T17:08:06.429</Modified>
+      <Modified>2017-12-12T14:00:58.120</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T17:08:06.429</Modified>
+      <Modified>2017-12-12T14:00:58.122</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T17:08:06.429</Modified>
+      <Modified>2017-12-12T14:00:58.124</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T17:08:06.429</Modified>
+      <Modified>2017-12-12T14:00:58.125</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T17:08:06.429</Modified>
+      <Modified>2017-12-12T14:00:58.127</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T17:08:06.429</Modified>
+      <Modified>2017-12-12T14:00:58.128</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\bin\x86\Debug\gameBoard.xr.xml">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\bin\x86\Debug\gameBoard.xr.xml">
       <PackagePath>gameBoard.xr.xml</PackagePath>
-      <Modified>2017-12-08T17:08:11.882</Modified>
+      <Modified>2017-12-12T14:01:03.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-06-29T10:51:20.487</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2017-12-08T17:08:32.784</Modified>
+      <Modified>2017-12-12T14:01:56.148</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\Ball_Game\gameBoard\bin\x86\Debug\Core\gameBoard.exe">
+    <AppxPackagedFile Include="C:\Users\G00352031\Desktop\colour-game-12-12-17\gameBoard\bin\x86\Debug\Core\gameBoard.exe">
       <PackagePath>gameBoard.exe</PackagePath>
-      <Modified>2017-12-08T17:09:04.117</Modified>
+      <Modified>2017-12-12T14:01:56.325</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
