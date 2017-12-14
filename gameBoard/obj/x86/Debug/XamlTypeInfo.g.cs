@@ -132,15 +132,17 @@ namespace gameBoard.gameBoard_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[4];
             _typeNameTable[0] = "gameBoard.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "Object";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::gameBoard.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::System.Object);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -190,6 +192,7 @@ namespace gameBoard.gameBoard_XamlTypeInfo
             case 0:   //  gameBoard.MainPage
                 userType = new global::gameBoard.gameBoard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_MainPage;
+                userType.AddMemberName("Console");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -201,16 +204,35 @@ namespace gameBoard.gameBoard_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::gameBoard.gameBoard_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  Object
+                xamlType = new global::gameBoard.gameBoard_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_MainPage_Console(object instance)
+        {
+            var that = (global::gameBoard.MainPage)instance;
+            return that.Console;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::gameBoard.gameBoard_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::gameBoard.gameBoard_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "gameBoard.MainPage.Console":
+                userType = (global::gameBoard.gameBoard_XamlTypeInfo.XamlUserType)GetXamlTypeByName("gameBoard.MainPage");
+                xamlMember = new global::gameBoard.gameBoard_XamlTypeInfo.XamlMember(this, "Console", "Object");
+                xamlMember.Getter = get_0_MainPage_Console;
+                xamlMember.SetIsReadOnly();
+                break;
+            }
             return xamlMember;
         }
     }

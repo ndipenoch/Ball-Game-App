@@ -10,6 +10,7 @@ using Windows.Media.Core;
 using Windows.Media.Playback;
 using Windows.Storage;
 using Windows.UI;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -37,7 +38,8 @@ namespace gameBoard
             this.InitializeComponent();
             CreatGameBoard();
 
-           ApplicationDataContainer localSetting = ApplicationData.Current.LocalSettings;
+
+            ApplicationDataContainer localSetting = ApplicationData.Current.LocalSettings;
             try
             {
 
@@ -48,10 +50,11 @@ namespace gameBoard
             catch (Exception e)
             {
 
-               clickCnt = 20;
+                clickCnt = 20;
             }
 
         }//end of MainPage()
+
 
 
         TextBlock txt = new TextBlock();
@@ -178,26 +181,28 @@ namespace gameBoard
             restart.Background = new SolidColorBrush(Colors.Green);
             gameBoard.Children.Add(restart);
 
-         
-         }//end of createGameBoar
 
 
-       //to restart the game by taking you to the main page
+
+        }//end of createGameBoar
+
+
+        //to restart the game by taking you to the main page
         private void restart_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //throw new NotImplementedException();
-          
+
             ApplicationDataContainer localSetting = ApplicationData.Current.LocalSettings;
             localSetting.Values["Value1"] = 0;
             this.Frame.Navigate(typeof(MainPage));
-            
+
         }
 
         private void nextRow_Tapped(object sender, TappedRoutedEventArgs e)
         {
 
             turn++;
-   
+
         }
 
         int blackBall = 0;
@@ -208,8 +213,9 @@ namespace gameBoard
         int whiteBall = 10;
         int sumtotal = 0;
 
+        public object Console { get; private set; }
 
-        private void Balls_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void Balls_Tapped(object sender, TappedRoutedEventArgs e)
         {
             clickCnt--;
             ApplicationDataContainer localSetting = ApplicationData.Current.LocalSettings;
@@ -221,8 +227,10 @@ namespace gameBoard
             int ballspos1 = Convert.ToInt32(ballspos);
 
 
+
             if (ballspos1 == turn)
             {
+
 
                 if (clickCnt >= 0)
                 {
@@ -279,6 +287,12 @@ namespace gameBoard
                 }//end of clickCnt
             }//(ballspos1 == turn)
 
+            if (clickCnt == 0)
+            {
+                await new MessageDialog("Congratulations your score is " + sumtotal + " try harder next time!").ShowAsync();// add async in method's signature
+
+
+            }
 
 
         }//end of Balls_Tapped
