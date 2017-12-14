@@ -29,7 +29,7 @@ namespace gameBoard
     public sealed partial class MainPage : Page
     {
         int turn = 1;
-        int clickCnt = 15;
+        int clickCnt = 20;
 
 
         public MainPage()
@@ -48,10 +48,10 @@ namespace gameBoard
             catch (Exception e)
             {
 
-               clickCnt = 15;
+               clickCnt = 20;
             }
-        
-        }
+
+        }//end of MainPage()
 
 
         TextBlock txt = new TextBlock();
@@ -73,19 +73,14 @@ namespace gameBoard
             square.BorderThickness = new Thickness(3);
 
 
-
-
             for (int i = 0; i < 6; i++)
             {
                 square.RowDefinitions.Add(new RowDefinition());
-               
-
             }//end of for loop for Row
 
             for (int i = 0; i < 5; i++)
             {
                 square.ColumnDefinitions.Add(new ColumnDefinition());
-
             }//end of for loop for col
 
             Ellipse balls;
@@ -204,7 +199,7 @@ namespace gameBoard
             turn++;
    
         }
-        //values
+
         int blackBall = 0;
         int yellowBall = 5;
         int greenBall = 33;
@@ -239,9 +234,6 @@ namespace gameBoard
 
                     Random rnd = new Random();
                     int changeColor = rnd.Next(1, 7);
-
-
-
 
                     switch (changeColor)
                     {
@@ -282,12 +274,10 @@ namespace gameBoard
                             localSetting.Values["Value1"] = sumtotal;
                             break;
 
-
-
                     }//end of switch
 
                 }//end of clickCnt
-            }
+            }//(ballspos1 == turn)
 
 
 

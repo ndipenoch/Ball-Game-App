@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="b11be82a-a498-4b5d-9b71-7a5d73343647" Publisher="CN=g00352031" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="31239mcndipenoch.Colours-Game" Publisher="CN=9117EAEC-F931-45F9-AF7B-616130BB7F87" Version="1.1.18.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="b11be82a-a498-4b5d-9b71-7a5d73343647" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>gameBoard</DisplayName>
-    <PublisherDisplayName>g00352031</PublisherDisplayName>
+    <DisplayName>Colours-Game</DisplayName>
+    <PublisherDisplayName>mcndipenoch</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -24,8 +24,13 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="gameBoard.exe" EntryPoint="gameBoard.App">
-      <uap:VisualElements DisplayName="gameBoard" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="gameBoard" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+      <uap:VisualElements DisplayName="Colours-Game" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="gameBoard" BackgroundColor="transparent">
+        <uap:LockScreen Notification="badge" BadgeLogo="Assets\BadgeLogo.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\Square71x71Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" ShortName="logo">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>

@@ -1,0 +1,6 @@
+MainPackage=C:\Users\G00352031\Desktop\gameBoard-update-08-17-Update\gameBoard\bin\ARM\Release\Upload\gameBoard_1.1.18.0_ARM.appx
+SymbolPackage=C:\Users\G00352031\Desktop\gameBoard-update-08-17-Update\gameBoard\AppPackages\gameBoard_1.1.18.0\gameBoard_1.1.18.0_ARM.appxsym
+ResourcePack=C:\Users\G00352031\Desktop\gameBoard-update-08-17-Update\gameBoard\_scale-100.appx
+ResourcePack=C:\Users\G00352031\Desktop\gameBoard-update-08-17-Update\gameBoard\_scale-125.appx
+ResourcePack=C:\Users\G00352031\Desktop\gameBoard-update-08-17-Update\gameBoard\_scale-150.appx
+ResourcePack=C:\Users\G00352031\Desktop\gameBoard-update-08-17-Update\gameBoard\_scale-400.appx
